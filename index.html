@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#0b111a">
+  <title>LLUCKTEC | Engenharia Elétrica e Automações</title>
+  <meta name="description" content="Engenharia elétrica, automações e atendimento 24h em Santa Catarina.">
+  <link rel="preconnect" href="https://www.google.com" crossorigin>
+  <link rel="preconnect" href="https://maps.google.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="assets/images/hero-llucktec.png">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- === Cabeçalho === -->
+  <header class="site-header" id="cabecalho">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="LLUCKTEC - início">
+        <!-- A nova logo já está em PNG transparente. Se a arte final for trocada depois, mantenha este mesmo container e proporção. -->
+        <span class="brand-card"><img src="assets/logo/llucktec-logo.png" alt="LLUCKTEC - Soluções e Automações" width="2048" height="682"></span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#servicos">Serviços</a>
+        <a href="https://wa.me/5548991169113?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20LLUCKTEC%2C%20preciso%20de%20atendimento" target="_blank" rel="noopener noreferrer">Orçamento</a>
+        <a href="#certificacoes">Certificações</a>
+        <a href="#regioes">Regiões</a>
+      </nav>
+
+      <a class="header-cta" href="https://wa.me/5548991169113?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20LLUCKTEC%2C%20preciso%20de%20atendimento" target="_blank" rel="noopener noreferrer">Entre em contato agora</a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu-mobile"><span></span><span></span><span></span></button>
+    </div>
+
+    <div class="mobile-menu" id="menu-mobile" aria-hidden="true">
+      <nav aria-label="Navegação mobile">
+        <a href="#servicos">Serviços</a>
+        <a href="https://wa.me/5548991169113?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20LLUCKTEC%2C%20preciso%20de%20atendimento" target="_blank" rel="noopener noreferrer">Orçamento</a>
+        <a href="#certificacoes">Certificações</a>
+        <a href="#regioes">Regiões</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO EXISTENTE: colar aqui -->
+    <!-- === Hero === -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-perspective" aria-hidden="true">
+        <div class="hero-visual">
+          <div class="hero-bg"></div>
+          <div class="tech-grid"></div>
+          <canvas class="particles" id="particles"></canvas>
+        </div>
+      </div>
+      <div class="hero-shade" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <div class="eyebrow"><span class="status-dot"></span>Engenharia Elétrica <i></i> Plantão 24h</div>
+        <h1 id="hero-title"><span class="hero-title-line">Projetos elétricos, manutenção e</span><br><span class="hero-title-line">automação com a segurança que</span><br><span class="hero-title-line"><span class="hero-title-accent">Florianópolis e região</span> confia.</span></h1>
+        <p class="hero-copy"><span class="hero-copy-line">Atendemos residências, condomínios e empresas em toda a</span><br><span class="hero-copy-line">Grande Florianópolis, com plantão 24h e garantia de 5 anos.</span></p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://wa.me/5548991169113?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20LLUCKTEC%2C%20preciso%20de%20atendimento" target="_blank" rel="noopener noreferrer">Chame Aqui <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-outline" href="https://wa.me/5548991169113?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20LLUCKTEC%2C%20preciso%20de%20atendimento" target="_blank" rel="noopener noreferrer">Faça seu orçamento agora</a>
+        </div>
+        <ul class="trust-list" aria-label="Diferenciais">
+          <li><svg viewBox="0 0 24 24"><path d="M12 8v5l3 2M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg><span>Atendimento 24h</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="m9 12 2 2 4-5M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6l7-3Z"/></svg><span>ART/TRT emitida</span></li>
+          <li><svg viewBox="0 0 24 24"><path d="m12 3 2.2 4.5 5 .7-3.6 3.5.9 5-4.5-2.3-4.5 2.3.9-5-3.6-3.5 5-.7L12 3Z"/></svg><span>Garantia até 5 anos</span></li>
+        </ul>
+      </div>
+      <div class="scroll-cue" aria-hidden="true"><span></span></div>
+    </section>
+
+
+    <!-- === Serviços === -->
+    <section class="services-section" id="servicos" aria-labelledby="services-title">
+      <canvas class="services-particles" id="services-particles" aria-hidden="true"></canvas>
+      <div class="services-scan" aria-hidden="true"></div>
+      <div class="services-inner">
+        <header class="services-head reveal-head">
+          <div class="services-badge"><span class="services-dot" aria-hidden="true"></span>NOSSOS SERVIÇOS</div>
+          <h2 id="services-title">Soluções elétricas completas, <span>do projeto à manutenção</span></h2>
+          <p>Engenharia, execução e automação com equipe habilitada, ART/TRT emitida e garantia de até 5 anos.</p>
+        </header>
+
+        <div class="energy-journey" id="energy-journey">
+          <svg class="energy-circuit" id="energy-circuit" aria-hidden="true"></svg>
+          <div class="energy-stations" id="energy-stations"></div>
+          <div class="energy-terminal" aria-hidden="true"><span></span></div>
+        </div>
+
+        <div class="services-cta reveal-head">
+          <a class="btn btn-primary" href="https://wa.me/5548991169113?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20LLUCKTEC%2C%20preciso%20de%20atendimento" target="_blank" rel="noopener noreferrer">Solicitar orçamento</a>
+          <a class="btn btn-outline" href="https://wa.me/5548991169113?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20LLUCKTEC%2C%20preciso%20de%20atendimento" target="_blank" rel="noopener noreferrer">Entre em contato agora</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- === Certificações: Sistema de Conformidade LLUCKTEC === -->
+    <section class="compliance-section" id="certificacoes" aria-labelledby="compliance-title">
+      <div class="compliance-blueprint" aria-hidden="true"></div>
+      <div class="compliance-inner">
+        <header class="compliance-head compliance-reveal">
+          <div class="services-badge"><span class="services-dot" aria-hidden="true"></span>CERTIFICAÇÕES &amp; SEGURANÇA</div>
+          <h2 id="compliance-title">Conformidade faz parte <span>da execução.</span></h2>
+          <p>Na LLUCKTEC, segurança, qualificação e responsabilidade técnica fazem parte de cada projeto. Nossa equipe atua com treinamentos, habilitações e procedimentos alinhados às exigências aplicáveis a cada atividade.</p>
+        </header>
+
+        <div class="compliance-system" id="compliance-system">
+          <svg class="compliance-circuit" id="compliance-circuit" aria-hidden="true"></svg>
+          <div class="compliance-scanner" aria-hidden="true"></div>
+          <div class="compliance-core compliance-reveal" data-node="core">
+            <span class="core-kicker">LLUCKTEC</span><strong>SISTEMA DE<br>CONFORMIDADE</strong><span class="core-status"><i></i> MONITORAMENTO TÉCNICO</span>
+          </div>
+
+          <section class="compliance-level level-one" aria-labelledby="level-one-title">
+            <div class="level-label compliance-reveal"><span>01</span><h3 id="level-one-title">SEGURANÇA E QUALIFICAÇÃO</h3></div>
+            <div class="nr-grid">
+              <article class="compliance-node compliance-reveal" data-node="nr10"><div class="node-top"><b>NR 10</b><span>● QUALIFICAÇÃO TÉCNICA</span></div><h4>Segurança em Instalações e Serviços em Eletricidade</h4><p>Capacitação para atuação segura em instalações e serviços elétricos, incluindo medidas de controle, análise de risco, primeiros socorros e prevenção de incêndios.</p><div class="node-tags"><span>Módulo Básico + SEP</span><span>Baixa, Média e Alta Tensão</span></div></article>
+              <article class="compliance-node compliance-reveal" data-node="nr35"><div class="node-top"><b>NR 35</b><span>● QUALIFICAÇÃO TÉCNICA</span></div><h4>Trabalho em Altura</h4><p>Capacitação para atividades realizadas acima de 2 metros com risco de queda, incluindo infraestrutura elétrica, cabeamentos, galpões, subestações e fachadas.</p><div class="node-tags"><span>EPCs + EPIs antiqueda</span></div></article>
+              <article class="compliance-node compliance-reveal" data-node="nr6"><div class="node-top"><b>NR 6</b><span>● QUALIFICAÇÃO TÉCNICA</span></div><h4>Equipamentos de Proteção Individual</h4><p>Uso e controle adequado de equipamentos de proteção para atividades elétricas e operacionais.</p><div class="node-tags"><span>Vestimentas ATPV</span><span>Ferramentas isoladas</span><span>Luvas dielétricas</span><span>Capacetes Classe B</span></div></article>
+              <article class="compliance-node compliance-reveal" data-node="nr33"><div class="node-top"><b>NR 33</b><span>● QUALIFICAÇÃO TÉCNICA</span></div><h4>Espaços Confinados</h4><p>Capacitação para atuação em ambientes confinados, como caixas subterrâneas, subestações enterradas, dutos e poços de elevação.</p><div class="node-tags"><span>Monitoramento + procedimentos de segurança</span></div></article>
+              <article class="compliance-node compliance-reveal" data-node="nr18"><div class="node-top"><b>NR 18</b><span>● QUALIFICAÇÃO TÉCNICA</span></div><h4>Segurança na Construção</h4><p>Procedimentos de segurança aplicáveis a canteiros de obras e integração com o gerenciamento de riscos das empresas contratantes.</p><div class="node-tags"><span>Integração com PGR</span></div></article>
+              <article class="compliance-node compliance-reveal" data-node="nr1"><div class="node-top"><b>NR 1</b><span>● QUALIFICAÇÃO TÉCNICA</span></div><h4>Gerenciamento de Riscos Ocupacionais</h4><p>Base para gerenciamento dos riscos ocupacionais e documentação dos treinamentos de segurança.</p><div class="node-tags"><span>GRO + documentação técnica</span></div></article>
+            </div>
+          </section>
+
+          <section class="compliance-level level-two" aria-labelledby="level-two-title">
+            <div class="level-label compliance-reveal"><span>02</span><h3 id="level-two-title">RESPONSABILIDADE TÉCNICA</h3></div>
+            <article class="responsibility-module compliance-reveal" data-node="crea">
+              <div class="responsibility-copy"><span class="module-code">CREA / CFT</span><h4>Responsabilidade técnica documentada</h4><p>Projetos elétricos, laudos e execuções são acompanhados, quando aplicável, da respectiva ART (Anotação de Responsabilidade Técnica) ou TRT (Termo de Responsabilidade Técnica), emitida por profissional legalmente habilitado e registrado no conselho competente.</p><ul><li>PROFISSIONAIS HABILITADOS</li><li>RESPONSABILIDADE TÉCNICA</li><li>DOCUMENTAÇÃO DO PROJETO</li></ul></div>
+              <div class="responsibility-codes" aria-label="CREA, CFT, ART e TRT"><span>CREA</span><span>CFT</span><span>ART</span><span>TRT</span></div>
+            </article>
+          </section>
+
+          <section class="compliance-level level-three" aria-labelledby="level-three-title">
+            <div class="level-label compliance-reveal"><span>03</span><h3 id="level-three-title">NORMAS TÉCNICAS</h3></div>
+            <div class="standards-module compliance-reveal" data-node="nbr"><div><span class="module-code">ABNT</span><h4>Execução alinhada às normas ABNT</h4><p>Os projetos e serviços da LLUCKTEC seguem as normas técnicas aplicáveis ao escopo de cada execução.</p></div><div class="standards-list"><span><b>NBR 5410</b>Instalações elétricas de baixa tensão</span><span><b>NBR 14039</b>Instalações elétricas de média tensão</span><span><b>NBR 5419</b>Proteção contra descargas atmosféricas — SPDA</span></div></div>
+          </section>
+
+          <div class="system-result compliance-reveal" data-node="valid"><span>ANÁLISE DO SISTEMA</span><div class="result-track"><i></i></div><strong>✓ SISTEMA VALIDADO</strong><small>CONFORMIDADE TÉCNICA</small></div>
+        </div>
+
+        <div class="compliance-cta compliance-reveal"><a class="btn btn-primary" href="https://wa.me/5548991169113?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20LLUCKTEC%2C%20preciso%20de%20atendimento" target="_blank" rel="noopener noreferrer">Solicitar orçamento</a><a class="btn btn-outline" href="https://wa.me/5548991169113?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20LLUCKTEC%2C%20preciso%20de%20atendimento" target="_blank" rel="noopener noreferrer">Entre em contato agora</a></div>
+      </div>
+    </section>
+
+    <!-- Regiões de Atendimento LLUCKTEC -->
+    <section class="regions-section" id="regioes" aria-labelledby="regions-title">
+      <div class="regions-grid-bg" aria-hidden="true"></div>
+      <div class="regions-inner">
+        <header class="regions-head regions-reveal">
+          <div class="regions-eyebrow"><span></span>REGIÕES DE ATENDIMENTO</div>
+          <h2 id="regions-title">Atendimento em toda a <span>Grande Florianópolis</span></h2>
+          <p>Atendemos residências, condomínios, empresas e indústrias em Florianópolis e cidades da região, com base estratégica em Santo Amaro da Imperatriz.</p>
+        </header>
+
+        <div class="regions-interface">
+          <div class="map-module regions-reveal">
+            <div class="map-corner map-corner-a" aria-hidden="true"></div><div class="map-corner map-corner-b" aria-hidden="true"></div>
+            <div class="map-status" aria-live="polite"><small>LOCALIZAÇÃO SELECIONADA</small><strong id="map-location">GRANDE FLORIANÓPOLIS — SC</strong><span>ÁREA DE ATENDIMENTO</span></div>
+            <div class="map-placeholder" id="map-placeholder" aria-hidden="true"><span>Carregando mapa...</span></div>
+            <iframe id="regions-map" class="regions-map" title="Google Maps com a área de atendimento da LLUCKTEC na Grande Florianópolis" src="about:blank" data-src="https://www.google.com/maps?q=Grande%20Florian%C3%B3polis%2C%20SC%2C%20Brasil&output=embed" loading="eager" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+            <div class="map-footer"><span><i></i> MAPA INTERATIVO</span><a id="open-google-maps" href="https://www.google.com/maps/search/?api=1&query=Grande%20Florian%C3%B3polis%2C%20SC%2C%20Brasil" target="_blank" rel="noopener noreferrer">Abrir no Google Maps ↗</a></div>
+          </div>
+
+          <aside class="regions-panel regions-reveal" aria-labelledby="areas-title">
+            <div class="panel-heading"><div><small>COBERTURA OPERACIONAL</small><h3 id="areas-title">Áreas de atendimento</h3></div><span class="panel-led" aria-hidden="true"></span></div>
+            <div class="cities-list" id="cities-list">
+              <button class="city-item" type="button" data-city="Florianópolis" aria-pressed="false"><span>01</span><b>Florianópolis</b><i></i></button>
+              <button class="city-item city-base" type="button" data-city="Santo Amaro da Imperatriz" aria-pressed="false"><span>02</span><b>Santo Amaro da Imperatriz<small>BASE ESTRATÉGICA</small></b><i></i></button>
+              <button class="city-item" type="button" data-city="São José" aria-pressed="false"><span>03</span><b>São José</b><i></i></button>
+              <button class="city-item" type="button" data-city="Palhoça" aria-pressed="false"><span>04</span><b>Palhoça</b><i></i></button>
+              <button class="city-item" type="button" data-city="Biguaçu" aria-pressed="false"><span>05</span><b>Biguaçu</b><i></i></button>
+              <button class="city-item" type="button" data-city="Águas Mornas" aria-pressed="false"><span>06</span><b>Águas Mornas</b><i></i></button>
+              <button class="city-item" type="button" data-city="São Pedro de Alcântara" aria-pressed="false"><span>07</span><b>São Pedro de Alcântara</b><i></i></button>
+              <button class="city-item" type="button" data-city="Antônio Carlos" aria-pressed="false"><span>08</span><b>Antônio Carlos</b><i></i></button>
+              <button class="city-item" type="button" data-city="Governador Celso Ramos" aria-pressed="false"><span>09</span><b>Governador Celso Ramos</b><i></i></button>
+              <button class="city-item" type="button" data-city="Paulo Lopes" aria-pressed="false"><span>10</span><b>Paulo Lopes</b><i></i></button>
+              <button class="city-item" type="button" data-city="Tijucas" aria-pressed="false"><span>11</span><b>Tijucas</b><i></i></button>
+              <button class="city-item" type="button" data-city="Rancho Queimado" aria-pressed="false"><span>12</span><b>Rancho Queimado</b><i></i></button>
+            </div>
+            <div class="regions-duty"><span class="status-dot"></span><div><small>PLANTÃO 24H</small><strong>Grande Florianópolis e região</strong></div></div>
+            <div class="radius-block"><div class="radius-symbol" aria-hidden="true"><span>20</span><small>KM</small></div><div><small>RAIO DE ATENDIMENTO</small><h4>Até 20 km de<br>Santo Amaro da Imperatriz</h4><p>Também atendemos localidades em um raio de até 20 km da nossa base estratégica. Consulte nossa equipe para confirmar o atendimento na sua região.</p><button class="radius-map-button" type="button" id="show-base">Localizar base estratégica no mapa</button><em>O raio informado representa distância geográfica aproximada em linha reta.</em></div></div>
+          </aside>
+        </div>
+        <div class="regions-cta regions-reveal"><p>Precisa de atendimento na sua região? <strong>Fale com nossa equipe.</strong></p><div><a class="btn btn-primary" href="https://wa.me/5548991169113?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20LLUCKTEC%2C%20preciso%20de%20atendimento" target="_blank" rel="noopener noreferrer">Solicitar orçamento</a><a class="btn btn-outline" href="https://wa.me/5548991169113?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20LLUCKTEC%2C%20preciso%20de%20atendimento" target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp</a></div></div>
+      </div>
+    </section>
+
+    <!-- === Dúvidas Frequentes: Central Técnica LLUCKTEC === -->
+    <section class="faq-section" id="duvidas" aria-labelledby="faq-title">
+      <div class="faq-grid-bg" aria-hidden="true"></div>
+      <div class="faq-inner">
+        <header class="faq-head faq-reveal">
+          <div class="faq-eyebrow"><span></span>DÚVIDAS FREQUENTES</div>
+          <h2 id="faq-title">Antes de começar seu projeto,<br><span>tire suas dúvidas.</span></h2>
+          <p>Reunimos as principais informações sobre atendimento, projetos, segurança e execução.</p>
+        </header>
+        <div class="faq-layout">
+          <aside class="faq-console faq-reveal" aria-label="Filtros da Central Técnica">
+            <div class="faq-console-top"><div><small>LLUCKTEC / TECHNICAL SUPPORT</small><strong>CENTRAL TÉCNICA</strong></div><span class="faq-online"><i></i>SISTEMA ONLINE</span></div>
+            <div class="faq-tech-icon" aria-hidden="true"><svg viewBox="0 0 120 120"><path d="M31 20h43l16 16v64H31z"/><path d="M74 20v18h18M44 53h34M44 66h26M44 79h20"/><circle cx="83" cy="82" r="13"/><path d="M83 76v1c0 4-5 4-5 8M78 91h.1"/></svg><span>INFORMATION SYSTEM</span></div>
+            <div class="faq-count" id="faq-count" aria-live="polite">12 QUESTÕES DISPONÍVEIS</div>
+            <nav class="faq-filters" aria-label="Filtrar dúvidas por categoria">
+              <button type="button" class="faq-filter is-active" data-filter="all" aria-pressed="true"><span>TODAS</span><i></i></button>
+              <button type="button" class="faq-filter" data-filter="atendimento" aria-pressed="false"><span>ATENDIMENTO</span><i></i></button>
+              <button type="button" class="faq-filter" data-filter="projetos" aria-pressed="false"><span>PROJETOS</span><i></i></button>
+              <button type="button" class="faq-filter" data-filter="seguranca" aria-pressed="false"><span>SEGURANÇA</span><i></i></button>
+              <button type="button" class="faq-filter" data-filter="regioes" aria-pressed="false"><span>REGIÕES</span><i></i></button>
+            </nav>
+            <div class="faq-console-meta" aria-hidden="true"><span>QUERY DATABASE</span><span>STATUS / ONLINE</span></div>
+          </aside>
+          <div class="faq-list" id="faq-list"><article class="faq-item faq-reveal" data-category="atendimento">
+              <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-01"><span class="faq-number">01</span><span class="faq-question-text">A LLUCKTEC atende residências, empresas e indústrias?</span><span class="faq-node" aria-hidden="true"></span><span class="faq-plus" aria-hidden="true">+</span></button></h3>
+              <div class="faq-answer" id="faq-answer-01" aria-hidden="true"><div class="faq-answer-inner"><p>Sim. A LLUCKTEC atua em projetos, instalações, manutenções e soluções elétricas para ambientes residenciais, comerciais e industriais, de acordo com as necessidades de cada projeto.</p></div></div>
+            </article><article class="faq-item faq-reveal" data-category="atendimento">
+              <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-02"><span class="faq-number">02</span><span class="faq-question-text">Vocês atendem emergências elétricas 24 horas?</span><span class="faq-node" aria-hidden="true"></span><span class="faq-plus" aria-hidden="true">+</span></button></h3>
+              <div class="faq-answer" id="faq-answer-02" aria-hidden="true"><div class="faq-answer-inner"><p>Sim. A LLUCKTEC conta com plantão 24h para situações que necessitam de atendimento elétrico emergencial.</p></div></div>
+            </article><article class="faq-item faq-reveal" data-category="regioes">
+              <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-03"><span class="faq-number">03</span><span class="faq-question-text">Quais regiões a LLUCKTEC atende?</span><span class="faq-node" aria-hidden="true"></span><span class="faq-plus" aria-hidden="true">+</span></button></h3>
+              <div class="faq-answer" id="faq-answer-03" aria-hidden="true"><div class="faq-answer-inner"><p>Atendemos Florianópolis, Santo Amaro da Imperatriz, São José, Palhoça, Biguaçu, Águas Mornas, São Pedro de Alcântara, Antônio Carlos, Governador Celso Ramos, Paulo Lopes, Tijucas e Rancho Queimado, além de localidades em um raio de até 20 km da nossa base estratégica em Santo Amaro da Imperatriz.</p></div></div>
+            </article><article class="faq-item faq-reveal" data-category="seguranca">
+              <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-04"><span class="faq-number">04</span><span class="faq-question-text">A LLUCKTEC emite ART ou TRT?</span><span class="faq-node" aria-hidden="true"></span><span class="faq-plus" aria-hidden="true">+</span></button></h3>
+              <div class="faq-answer" id="faq-answer-04" aria-hidden="true"><div class="faq-answer-inner"><p>Sim. Quando aplicável ao serviço contratado, projetos, laudos e execuções contam com a respectiva ART ou TRT, emitida por profissional legalmente habilitado.</p></div></div>
+            </article><article class="faq-item faq-reveal" data-category="seguranca">
+              <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-05"><span class="faq-number">05</span><span class="faq-question-text">A equipe possui treinamento para trabalhar com eletricidade?</span><span class="faq-node" aria-hidden="true"></span><span class="faq-plus" aria-hidden="true">+</span></button></h3>
+              <div class="faq-answer" id="faq-answer-05" aria-hidden="true"><div class="faq-answer-inner"><p>Sim. A equipe atua com capacitações e procedimentos de segurança pertinentes às atividades executadas, incluindo NR 10 e demais Normas Regulamentadoras aplicáveis ao escopo de cada serviço.</p></div></div>
+            </article><article class="faq-item faq-reveal" data-category="projetos">
+              <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-06"><span class="faq-number">06</span><span class="faq-question-text">A LLUCKTEC trabalha com baixa, média e alta tensão?</span><span class="faq-node" aria-hidden="true"></span><span class="faq-plus" aria-hidden="true">+</span></button></h3>
+              <div class="faq-answer" id="faq-answer-06" aria-hidden="true"><div class="faq-answer-inner"><p>A equipe possui capacitação NR 10 e SEP para atuação em diferentes sistemas elétricos, conforme o escopo, os requisitos técnicos e as condições de cada projeto.</p></div></div>
+            </article><article class="faq-item faq-reveal" data-category="projetos">
+              <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-07"><span class="faq-number">07</span><span class="faq-question-text">Vocês fazem manutenção elétrica preventiva e corretiva?</span><span class="faq-node" aria-hidden="true"></span><span class="faq-plus" aria-hidden="true">+</span></button></h3>
+              <div class="faq-answer" id="faq-answer-07" aria-hidden="true"><div class="faq-answer-inner"><p>Sim. Realizamos diagnóstico, manutenção preventiva e manutenção corretiva em instalações elétricas residenciais, comerciais e industriais.</p></div></div>
+            </article><article class="faq-item faq-reveal" data-category="projetos">
+              <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-08"><span class="faq-number">08</span><span class="faq-question-text">Vocês fazem projetos elétricos completos ou somente a execução?</span><span class="faq-node" aria-hidden="true"></span><span class="faq-plus" aria-hidden="true">+</span></button></h3>
+              <div class="faq-answer" id="faq-answer-08" aria-hidden="true"><div class="faq-answer-inner"><p>A LLUCKTEC pode atuar desde o planejamento e projeto até a execução, adequação e manutenção da instalação elétrica, conforme a necessidade do cliente.</p></div></div>
+            </article><article class="faq-item faq-reveal" data-category="projetos">
+              <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-09"><span class="faq-number">09</span><span class="faq-question-text">A LLUCKTEC trabalha com automação?</span><span class="faq-node" aria-hidden="true"></span><span class="faq-plus" aria-hidden="true">+</span></button></h3>
+              <div class="faq-answer" id="faq-answer-09" aria-hidden="true"><div class="faq-answer-inner"><p>Sim. Desenvolvemos soluções de automação residencial e industrial, incluindo iluminação inteligente, sensores, sistemas de controle e aplicações com CLP.</p></div></div>
+            </article><article class="faq-item faq-reveal" data-category="projetos">
+              <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-10"><span class="faq-number">10</span><span class="faq-question-text">Vocês fazem aterramento e SPDA?</span><span class="faq-node" aria-hidden="true"></span><span class="faq-plus" aria-hidden="true">+</span></button></h3>
+              <div class="faq-answer" id="faq-answer-10" aria-hidden="true"><div class="faq-answer-inner"><p>Sim. A LLUCKTEC executa soluções de aterramento e sistemas de proteção contra descargas atmosféricas (SPDA), considerando as normas técnicas aplicáveis ao projeto.</p></div></div>
+            </article><article class="faq-item faq-reveal" data-category="seguranca">
+              <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-11"><span class="faq-number">11</span><span class="faq-question-text">A LLUCKTEC segue as normas técnicas da ABNT?</span><span class="faq-node" aria-hidden="true"></span><span class="faq-plus" aria-hidden="true">+</span></button></h3>
+              <div class="faq-answer" id="faq-answer-11" aria-hidden="true"><div class="faq-answer-inner"><p>Os projetos e execuções são realizados considerando as normas técnicas aplicáveis a cada serviço, incluindo referências como NBR 5410, NBR 14039 e NBR 5419, conforme o escopo.</p></div></div>
+            </article><article class="faq-item faq-reveal" data-category="atendimento">
+              <h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="faq-answer-12"><span class="faq-number">12</span><span class="faq-question-text">Como funciona o orçamento?</span><span class="faq-node" aria-hidden="true"></span><span class="faq-plus" aria-hidden="true">+</span></button></h3>
+              <div class="faq-answer" id="faq-answer-12" aria-hidden="true"><div class="faq-answer-inner"><p>O primeiro passo é entrar em contato com a equipe e explicar a necessidade. Dependendo do serviço, pode ser necessária uma avaliação técnica para definir o escopo e elaborar o orçamento adequado.</p></div></div>
+            </article></div>
+        </div>
+        <div class="faq-cta faq-reveal">
+          <div><small>AINDA FICOU COM ALGUMA DÚVIDA?</small><h3>Fale diretamente com<br><span>nossa equipe.</span></h3><p>Nossa equipe está pronta para entender sua necessidade e orientar sobre a melhor solução.</p><div class="faq-duty"><i></i><span><b>PLANTÃO 24H</b> Grande Florianópolis e região</span></div></div>
+          <div class="faq-cta-actions"><a class="btn btn-primary" href="https://wa.me/5548991169113?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20LLUCKTEC%2C%20preciso%20de%20atendimento" target="_blank" rel="noopener noreferrer">Solicitar orçamento</a><a class="btn btn-outline" href="https://wa.me/5548991169113?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20LLUCKTEC%2C%20preciso%20de%20atendimento" target="_blank" rel="noopener noreferrer">Falar pelo WhatsApp</a></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+  <!-- === Footer: Final do Circuito LLUCKTEC === -->
+  <footer class="site-footer" id="rodape">
+    <div class="footer-circuit" aria-hidden="true">
+      <svg viewBox="0 0 1200 56" preserveAspectRatio="none">
+        <path class="footer-line" d="M0 28H235l20-12h150l18 12h345l20 12h165l18-12H1200"/>
+        <path class="footer-line-hot" pathLength="1000" d="M0 28H235l20-12h150l18 12h345l20 12h165l18-12H1200"/>
+        <circle class="footer-node" cx="255" cy="16" r="4"/>
+        <rect class="footer-diamond" x="594" y="23" width="10" height="10" transform="rotate(45 599 28)"/>
+        <circle class="footer-node footer-node-red" cx="788" cy="40" r="3.5"/>
+        <circle class="footer-node footer-node-final" cx="1172" cy="28" r="4.5"/>
+      </svg>
+    </div>
+    <div class="footer-inner">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a class="footer-logo-link" href="#inicio" aria-label="LLUCKTEC - voltar ao início">
+            <img class="footer-logo" src="assets/logo/llucktec-logo.png" alt="LLUCKTEC - Soluções e Automações" width="2048" height="682">
+          </a>
+          <p class="footer-description">Engenharia elétrica, automação e soluções técnicas para residências, condomínios, empresas e indústrias na Grande Florianópolis.</p>
+          <div class="footer-duty"><i aria-hidden="true"></i><span>PLANTÃO 24H<small>Grande Florianópolis e região</small></span></div>
+          <div class="footer-meta" aria-hidden="true"><span>SYSTEM / LLUCKTEC</span><span>STATUS / ONLINE</span><span>ENG / AUTOMATION</span></div>
+        </div>
+        <nav class="footer-nav" aria-label="Navegação do rodapé">
+          <span class="footer-label">NAVEGAÇÃO</span>
+          <div class="footer-links">
+            <a href="#servicos">Serviços</a>
+            <a href="#certificacoes">Certificações</a>
+            <a href="#regioes">Regiões</a>
+            <a href="#duvidas">Dúvidas Frequentes</a>
+            <a href="https://wa.me/5548991169113?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20LLUCKTEC%2C%20preciso%20de%20atendimento" target="_blank" rel="noopener noreferrer">Orçamento</a>
+          </div>
+        </nav>
+        <div class="footer-contact">
+          <span class="footer-label">CONTATO</span>
+          <div class="footer-contact-list">
+            <a class="footer-contact-link" href="https://wa.me/5548991169113?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20LLUCKTEC%2C%20preciso%20de%20atendimento" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          </div>
+          <p class="footer-base"><small>BASE ESTRATÉGICA</small><strong>Santo Amaro da Imperatriz — SC</strong></p>
+          <a class="footer-mini-cta" href="https://wa.me/5548991169113?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20LLUCKTEC%2C%20preciso%20de%20atendimento" target="_blank" rel="noopener noreferrer"><small>PRECISA DE ATENDIMENTO?</small><span>Falar com a LLUCKTEC <b aria-hidden="true">→</b></span></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 LLUCKTEC Soluções e Automações. Todos os direitos reservados.</p>
+        <a class="back-to-top" href="#inicio">Voltar ao topo <span aria-hidden="true">↑</span></a>
+      </div>
+    </div>
+  </footer>
+
+
+  <a class="whatsapp-float" href="https://wa.me/5548991169113?text=Ol%C3%A1!%20Vim%20atrav%C3%A9s%20do%20site%20da%20LLUCKTEC%2C%20preciso%20de%20atendimento" target="_blank" rel="noopener noreferrer" aria-label="Falar com a LLUCKTEC pelo WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M16 3A12.7 12.7 0 0 0 5.1 22.2L3.5 28.5l6.4-1.6A12.8 12.8 0 1 0 16 3Zm0 23.2c-2 0-4-.6-5.7-1.6l-.4-.2-3.8 1 1-3.7-.2-.4A10.5 10.5 0 1 1 16 26.2Zm5.8-7.8c-.3-.2-1.9-.9-2.2-1-.3-.1-.5-.2-.7.2l-1 1.2c-.2.2-.4.2-.7.1-2-.9-3.5-2.3-4.5-4.1-.2-.3 0-.5.1-.7l.5-.6.3-.6c.1-.2 0-.5 0-.6l-1-2.4c-.3-.7-.6-.6-.8-.6h-.7c-.2 0-.6.1-.9.4-.3.4-1.2 1.2-1.2 3s1.3 3.5 1.5 3.7c.2.2 2.5 3.9 6.2 5.3.9.4 1.5.6 2.1.7.9.3 1.7.2 2.3.1.7-.1 1.9-.8 2.2-1.6.3-.8.3-1.5.2-1.6-.1-.2-.4-.3-.7-.4Z"/></svg>
+  </a>
+<script src="script.js" defer></script>
+
+</body>
+</html>
