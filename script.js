@@ -52,7 +52,9 @@ if(!reduced){resize();draw();addEventListener('resize',resize,{passive:true});ne
   const stations=[...stationsHost.querySelectorAll('.energy-station')],head=section.querySelector('.services-head'),cta=section.querySelector('.services-cta');
   const show=el=>el&&el.classList.add('is-visible');
   if(reduced||!('IntersectionObserver'in window)){show(head);stations.forEach(show);show(cta)}else{
-    const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){show(e.target);io.unobserve(e.target)}}),{threshold:.16,rootMargin:'0px 0px -10% 0px'});[head,...stations,cta].forEach(el=>io.observe(el));
+    const mobileReveal=innerWidth<=640;
+    const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){show(e.target);io.unobserve(e.target)}}),mobileReveal?{threshold:.04,rootMargin:'0px 0px 18% 0px'}:{threshold:.16,rootMargin:'0px 0px -10% 0px'});
+    [head,...stations,cta].forEach(el=>io.observe(el));
   }
 
   const NS='http://www.w3.org/2000/svg',mk=(tag,attrs={})=>{const e=document.createElementNS(NS,tag);Object.entries(attrs).forEach(([k,v])=>e.setAttribute(k,v));return e};
@@ -76,8 +78,17 @@ if(!reduced){resize();draw();addEventListener('resize',resize,{passive:true});ne
   }
   let ticking=false;
   function syncEnergy(){
-    ticking=false;if(reduced||!livePath)return;const r=journey.getBoundingClientRect(),vh=innerHeight||1;const start=vh*.72,end=vh*.26-r.height;const progress=Math.max(0,Math.min(1,(start-r.top)/(start-end)));livePath.style.strokeDashoffset=String(1-progress);
-    stations.forEach((s,i)=>{const sr=s.getBoundingClientRect(),active=sr.top<vh*.68;nodes[i]?.classList.toggle('is-active',active)});
+    ticking=false;if(reduced||!livePath)return;
+    const r=journey.getBoundingClientRect(),vh=innerHeight||1,mobile=innerWidth<=640;
+    const start=vh*(mobile?.84:.72),end=vh*(mobile?.22:.26)-r.height;
+    const progress=Math.max(0,Math.min(1,(start-r.top)/(start-end)));
+    livePath.style.strokeDashoffset=String(1-progress);
+    const trigger=vh*(mobile?.82:.68);
+    stations.forEach((s,i)=>{
+      const sr=s.getBoundingClientRect(),active=sr.top<trigger;
+      nodes[i]?.classList.toggle('is-active',active);
+      if(mobile&&active)show(s);
+    });
   }
   // O circuito de Serviços só acompanha o scroll enquanto a própria seção está próxima da viewport.
   // Isso evita leituras de layout dos seis cards enquanto o usuário está em Certificações/Regiões.

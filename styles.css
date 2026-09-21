@@ -396,3 +396,55 @@ html{scrollbar-width:thin;scrollbar-color:var(--red) #050a12}
   .faq-question{grid-template-columns:25px minmax(0,1fr) 5px 23px;gap:7px}
   .faq-answer p{max-width:calc(100% - 33px)}
 }
+
+
+/* ==========================================================
+   AJUSTES MOBILE DEFINITIVOS — 21/09/2026
+   Somente smartphones. Nenhuma regra desktop foi alterada.
+   ========================================================== */
+@media(max-width:640px){
+  /* Hero: meio-termo entre as duas escalas anteriores; no mobile as quebras são naturais. */
+  .hero h1{
+    font-size:clamp(1.45rem,7.1vw,1.92rem);
+    line-height:1.09;
+    letter-spacing:-.035em;
+    max-width:100%;
+    text-wrap:pretty;
+  }
+  .hero h1 br{display:none}
+  .hero h1 .hero-title-line{display:inline;white-space:normal}
+  .hero h1 .hero-title-line + .hero-title-line::before{content:" "}
+
+  /* Serviços: linha/nó/ícone reagem como um único estágio, sem atrasos artificiais. */
+  .energy-icon{transition-delay:0s}
+  .energy-copy h3,.energy-copy p,.energy-more{transition-delay:0s}
+  .energy-number{transition-delay:0s}
+
+  /* Certificações: respiro somente entre o núcleo de conformidade e o primeiro grupo. */
+  .compliance-level.level-one{margin-top:34px}
+
+  /* Central Técnica: scroller horizontal real, com área final para revelar o último filtro. */
+  .faq-filters{
+    display:flex;
+    flex-wrap:nowrap;
+    justify-content:flex-start;
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+    padding:5px 22px 8px 2px;
+    gap:7px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    overscroll-behavior-x:contain;
+    touch-action:pan-x pan-y;
+    -webkit-overflow-scrolling:touch;
+    scroll-snap-type:x proximity;
+    scrollbar-width:none;
+  }
+  .faq-filter{flex:0 0 auto;scroll-snap-align:start}
+  .faq-filters::after{content:"";flex:0 0 10px;height:1px}
+}
+@media(max-width:390px){
+  .hero h1{font-size:clamp(1.38rem,7vw,1.7rem);line-height:1.1}
+  .compliance-level.level-one{margin-top:30px}
+}
