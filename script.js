@@ -65,12 +65,12 @@ if(!reduced){resize();draw();addEventListener('resize',resize,{passive:true});ne
   function drawEnergy(){
     const b=journey.getBoundingClientRect();if(!b.width||!b.height)return;svg.setAttribute('viewBox',`0 0 ${b.width} ${b.height}`);svg.innerHTML='';nodes=[];
     const mobile=innerWidth<768,rects=stations.map(s=>rel(s.getBoundingClientRect(),b));
-    const points=rects.map((r,i)=>mobile?({x:Math.min(b.width*.13,48),y:r.top+Math.min(86,(r.bottom-r.top)*.22)}):({x:i%2?b.width*.54:b.width*.46,y:r.cy}));
+    const points=rects.map((r,i)=>mobile?({x:12,y:r.top+Math.min(86,(r.bottom-r.top)*.22)}):({x:i%2?b.width*.54:b.width*.46,y:r.cy}));
     const start={x:mobile?points[0].x:b.width*.5,y:Math.max(8,points[0].y-150)},end={x:mobile?points.at(-1).x:b.width*.5,y:Math.min(b.height-20,points.at(-1).y+150)},all=[start,...points,end],d=buildRoute(all,b.width,mobile);
     svg.append(mk('path',{d,class:'energy-path-glow'}),mk('path',{d,class:'energy-path-base'}));
     mainPath=mk('path',{d,class:'energy-path-live'});mainPath.setAttribute('pathLength','1');mainPath.style.strokeDasharray='1';mainPath.style.strokeDashoffset='1';svg.append(mainPath);livePath=mainPath;
     const red=mk('path',{d,class:'energy-path-red',pathLength:'1'});svg.append(red);
-    points.forEach((pt,i)=>{const g=mk('g',{class:'energy-node','data-node':i});g.append(mk('circle',{cx:pt.x,cy:pt.y,r:9,class:'energy-node-ring'}),mk('circle',{cx:pt.x,cy:pt.y,r:2.5,class:'energy-node-core'}));svg.append(g);nodes.push(g);const r=rects[i],target=mobile?{x:r.left+18,y:r.top+45}:{x:i%2?r.left:r.right,y:r.cy};const branch=`M ${pt.x} ${pt.y} L ${target.x} ${pt.y} L ${target.x} ${target.y}`;svg.append(mk('path',{d:branch,class:'energy-branch'}))});
+    points.forEach((pt,i)=>{const g=mk('g',{class:'energy-node','data-node':i});g.append(mk('circle',{cx:pt.x,cy:pt.y,r:9,class:'energy-node-ring'}),mk('circle',{cx:pt.x,cy:pt.y,r:2.5,class:'energy-node-core'}));svg.append(g);nodes.push(g);const r=rects[i],target=mobile?{x:26,y:r.top+45}:{x:i%2?r.left:r.right,y:r.cy};const branch=`M ${pt.x} ${pt.y} L ${target.x} ${pt.y} L ${target.x} ${target.y}`;svg.append(mk('path',{d:branch,class:'energy-branch'}))});
     try{pathLength=mainPath.getTotalLength()||1}catch{pathLength=1}
     syncEnergy();
   }

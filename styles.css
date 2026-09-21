@@ -339,3 +339,60 @@ html{scrollbar-width:thin;scrollbar-color:var(--red) #050a12}
   .compliance-system.is-active .comp-group .comp-pulse{animation:none}
   .compliance-system.is-active .comp-group:nth-child(4) .comp-pulse{animation:compPulse 6s linear infinite var(--pulse-delay,0s)}
 }
+
+/* ==========================================================
+   AJUSTES FINAIS MOBILE — 21/09/2026
+   Escopo intencionalmente limitado a celulares (<= 640px).
+   Desktop/tablet grande permanecem inalterados.
+   ========================================================== */
+@media(max-width:640px){
+  /* Hero: restaura presença visual do H1 somente no celular. */
+  .hero h1{
+    width:100%;
+    max-width:100%;
+    font-size:clamp(2rem,8.9vw,2.72rem);
+    line-height:1.08;
+    letter-spacing:-.04em;
+  }
+
+  /* Serviços: reserva uma faixa lateral exclusiva para o circuito. */
+  .energy-journey{padding-left:42px}
+  .energy-station,.energy-station:nth-child(even){min-width:0}
+  .energy-visual,.energy-copy{min-width:0}
+  .energy-copy{padding-left:18px}
+  .energy-terminal{margin-left:-42px}
+  .energy-circuit{overflow:hidden}
+
+  /* FAQ: somente os filtros rolam horizontalmente; perguntas quebram dentro da viewport. */
+  .faq-layout,.faq-console,.faq-list,.faq-item,.faq-item h3,.faq-question,.faq-answer,.faq-answer-inner{min-width:0;max-width:100%}
+  .faq-filters{
+    display:flex;
+    width:100%;
+    max-width:100%;
+    gap:7px;
+    overflow-x:auto;
+    overflow-y:hidden;
+    overscroll-behavior-inline:contain;
+    -webkit-overflow-scrolling:touch;
+    scroll-behavior:smooth;
+    scrollbar-width:none;
+  }
+  .faq-filters::-webkit-scrollbar{display:none}
+  .faq-filter{flex:0 0 auto;white-space:nowrap}
+  .faq-question{width:100%;grid-template-columns:28px minmax(0,1fr) 6px 25px;gap:8px}
+  .faq-question-text{min-width:0;max-width:100%;white-space:normal;overflow-wrap:break-word;word-break:normal}
+  .faq-plus,.faq-node,.faq-number{min-width:0}
+  .faq-answer p{max-width:calc(100% - 38px);white-space:normal;overflow-wrap:break-word;word-break:normal}
+
+  /* Footer: navegação em uma única coluna no mobile. */
+  .footer-links{grid-template-columns:1fr;gap:3px}
+  .footer-links a{width:max-content;max-width:100%}
+}
+
+@media(max-width:390px){
+  .hero h1{font-size:clamp(1.9rem,9vw,2.35rem);line-height:1.09}
+  .energy-journey{padding-left:38px}
+  .energy-terminal{margin-left:-38px}
+  .faq-question{grid-template-columns:25px minmax(0,1fr) 5px 23px;gap:7px}
+  .faq-answer p{max-width:calc(100% - 33px)}
+}
